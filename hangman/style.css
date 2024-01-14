@@ -1,0 +1,241 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 60.25%;
+  margin: 0 auto;
+
+}
+
+
+body {
+
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  background-color: #8a9d8b;
+  color: #000000;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+
+}
+
+header{
+  text-align: center;
+}
+
+.hangman__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.divider{
+  background-color: #11361d;
+  height: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.game-container {
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 3rem;
+  align-items: center;
+  max-width: 144rem;
+  box-sizing: border-box;
+  min-height: 80vh;
+
+  
+}
+
+.hangman {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
+  width: 40%;
+
+}
+
+.hangman__img {
+  width: 100%;
+  object-fit: contain;
+} 
+
+
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  /* max-height: 70vh; */
+}
+
+.game__hint, .game__incorrect-guess {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.game__hint-text, .game__incorrect-score {
+  font-size: 2rem;
+}
+
+.game__incorrect-score{
+  color: #840e24;
+}
+.game__word-letters {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 10rem 0 3rem;
+  max-width: 60%;
+
+}
+
+li {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #11361d;
+  text-align: center;
+  text-transform: uppercase;
+  width: 4rem;
+  height: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: #314e3f;
+  
+  
+}
+
+li.guessed{
+  
+  height: 0;
+  margin-top: -7.5rem;
+}
+
+.game__keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  
+}
+
+.game__keyboard button {
+  margin: 0.5rem;
+  padding: 1.1rem;
+  font-size: 2rem;
+  width: 5rem;
+  background-color: #314e3f;
+  border: none;
+  border-radius: 0.7rem;
+  color: #8a9d8b;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+} 
+
+.game__keyboard button:hover{
+  background-color: #577458;
+  color: #2c4638;
+}
+
+.modal{
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.modal__content{
+  background-color: #964f4f;
+  width: 60%;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 3rem;
+
+}
+
+.modal__img{
+  max-width: 20%;
+}
+
+.modal__title{
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.modal__text{
+  margin: 2rem 0 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.modal__answer{
+  font-size: 2rem;
+  font-weight: bold;
+  /* color: #11361d; */
+  text-transform: uppercase;
+}
+
+.modal__btn{
+  margin: 2rem;
+  padding: 1.2rem 2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-color: #22352b;
+  color: #8a9d8b;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.modal__btn:hover{
+  background-color: #577458;
+  color: #22352b;
+}
+
+@media (max-width: 1000px){
+ 
+.game__keyboard button {
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 1.7rem;
+
+}
+
+.game__hint, .game__incorrect-guess {
+  margin-top: 2rem;
+}
+}
+
+
+
+@media (max-width: 768px){
+  .game-container {
+    flex-direction: column;
+    /* height: 100%; */
+    padding: 2rem 0;
+  }
+  .game {
+
+    width: fit-content;
+}
+}
