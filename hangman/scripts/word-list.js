@@ -1,11 +1,7 @@
 const wordList = [
   {
     "word": "castle",
-    "hint": "A large building typically fortified against attack, with thick walls, battlements, and often a moat."
-  },
-  {
-    "word": "summer",
-    "hint": "The warmest season of the year, in the northern hemisphere from June to August and in the southern hemisphere from December to February."
+    "hint": "A large building typically fortified against attack."
   },
   {
     "word": "forest",
@@ -17,11 +13,11 @@ const wordList = [
   },
   {
     "word": "rocket",
-    "hint": "A cylindrical projectile that can be propelled to a great height or distance by the combustion of its contents."
+    "hint": "A cylindrical projectile that can be propelled to a great height or distance."
   },
   {
     "word": "whistle",
-    "hint": "A clear, high-pitched sound made by forcing breath through a small hole between partly closed lips, or between one's teeth."
+    "hint": "A clear, high-pitched sound made by forcing breath through a small hole between partly closed lips."
   },
   {
     "word": "shadow",
@@ -49,7 +45,7 @@ const wordList = [
   },
   {
     "word": "silver",
-    "hint": "A shiny grayish-white metal, the chemical element of atomic number 47."
+    "hint": "A shiny grayish-white metal."
   },
   {
     "word": "people",
@@ -66,7 +62,7 @@ const wordList = [
   },
   {
     "word": "winter",
-    "hint": "The coldest season of the year, in the northern hemisphere from December to February and in the southern hemisphere from June to August."
+    "hint": "The coldest season of the year."
   },
   {
     "word": "circle",
@@ -74,7 +70,7 @@ const wordList = [
   },
   {
     "word": "whale",
-    "hint": "A very large marine mammal with a streamlined hairless body, a horizontal tail fin, and a blowhole on top of the head for breathing."
+    "hint": "A very large marine mammal with a streamlined hairless body."
   },
   {
     "word": "sunset",
@@ -82,7 +78,7 @@ const wordList = [
   },
   {
     "word": "giraffe",
-    "hint": "A large African mammal with a very long neck and forelegs, having a coat patterned with brown patches separated by lighter lines."
+    "hint": "A large African mammal"
   },
   {
     "word": "beacon",
@@ -90,7 +86,7 @@ const wordList = [
   },
   {
     "word": "desert",
-    "hint": "A dry, barren area of land, especially one covered with sand and characterized by little or no rainfall."
+    "hint": "A dry, barren area of land"
   },
   {
     "word": "island",
@@ -98,7 +94,7 @@ const wordList = [
   },
   {
     "word": "temple",
-    "hint": "A building devoted to the worship, or regarded as the dwelling place, of a god or gods or other objects of religious reverence."
+    "hint": "A building devoted to the worship, or regarded as the dwelling place."
   },
   {
     "word": "candle",
@@ -110,7 +106,7 @@ const wordList = [
   },
   {
     "word": "market",
-    "hint": "A regular gathering of people for the purchase and sale of provisions, livestock, and other commodities."
+    "hint": "A regular gathering of people for the purchase and sale of commodities."
   },
   {
     "word": "deference",
@@ -145,7 +141,7 @@ const wordList = [
     "hint": "A mythical bird said to breed at the winter solstice."
   },
   {
-    "word": "Jabberwocky",
+    "word": "jabberwocky",
     "hint": "A playful imitation of language consisting of invented, meaningless words."
   },
   {
@@ -154,19 +150,19 @@ const wordList = [
   },
   {
     "word": "adjustment",
-    "hint": "The act or process of making something fit or suitable for a particular purpose. It can also refer to the act of adapting to new conditions or circumstances."
+    "hint": "The act or process of making something fit or suitable for a particular purpose."
   },
   {
     "word": "statement",
-    "hint": "A definite or clear expression in speech or writing. It can also refer to a report or record of facts or opinions."
+    "hint": "A definite or clear expression in speech or writing."
   },
   {
     "word": "thought",
-    "hint": "The process of considering or reflecting on something. It can also refer to an idea or opinion produced by thinking, or the organized beliefs and principles of a person or group."
+    "hint": "The process of considering or reflecting on something."
   },
   {
     "word": "observation",
-    "hint": "The action or process of closely and attentively watching or perceiving something. It can also refer to a remark, comment, or statement based on what one has observed or noticed."
+    "hint": "The action or process of closely and attentively watching or perceiving something."
   },
   {
     word: "orchestra",
