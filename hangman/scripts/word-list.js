@@ -140,10 +140,10 @@ const wordList = [
     "word": "halcyon",
     "hint": "A mythical bird said to breed at the winter solstice."
   },
-  {
-    "word": "jabberwocky",
-    "hint": "A playful imitation of language consisting of invented, meaningless words."
-  },
+  // {
+  //   "word": "jabberwocky",
+  //   "hint": "A playful imitation of language consisting of invented, meaningless words."
+  // },
   {
     "word": "haversack",
     "hint": "A bag worn over the shoulder for carrying provisions."
@@ -152,18 +152,15 @@ const wordList = [
     "word": "adjustment",
     "hint": "The act or process of making something fit or suitable for a particular purpose."
   },
-  {
-    "word": "statement",
-    "hint": "A definite or clear expression in speech or writing."
-  },
+  // {
+  //   "word": "statement",
+  //   "hint": "A definite or clear expression in speech or writing."
+  // },
   {
     "word": "thought",
     "hint": "The process of considering or reflecting on something."
   },
-  {
-    "word": "observation",
-    "hint": "The action or process of closely and attentively watching or perceiving something."
-  },
+
   {
     word: "orchestra",
     hint: "A large ensemble of musicians playing various instruments."
@@ -184,10 +181,7 @@ const wordList = [
     word: "symphony",
     hint: "A long musical composition for a full orchestra, typically in multiple movements."
 },
-{
-    word: "architecture",
-    hint: "The art and science of designing and constructing buildings."
-},
+
 {
     word: "ballet",
     hint: "A classical dance form characterized by precise and graceful movements."
@@ -200,10 +194,10 @@ const wordList = [
     word: "waterfall",
     hint: "A cascade of water falling from a height."
 },
-{
-    word: "technology",
-    hint: "The application of scientific knowledge for practical purposes."
-},
+// {
+//     word: "technology",
+//     hint: "The application of scientific knowledge for practical purposes."
+// },
 {
     word: "rainbow",
     hint: "A meteorological phenomenon that is caused by reflection, refraction, and dispersion of light."

@@ -174,6 +174,7 @@ keyboard.classList.add('game__keyboard');
 alphabet.forEach(letter => {
     let key = document.createElement('button');
     key.textContent = letter;
+    key.dataset.letter = letter;
     keyboard.appendChild(key);
     
     const startGame = (key, clickedLetter) => {
@@ -201,6 +202,42 @@ alphabet.forEach(letter => {
     
 });
 gameBlock.appendChild(keyboard);
+
+
+// Warning message
+let warningMessage = document.createElement('div');
+warningMessage.className = 'warning-message';
+warningMessage.textContent = "Do not forget to switch keyboard layout";
+
+let closeButton = document.createElement('button');
+closeButton.textContent = 'X';
+closeButton.addEventListener('click', function() {
+    warningMessage.style.display = 'none';
+});
+warningMessage.appendChild(closeButton);
+
+gameBlock.appendChild(warningMessage);
+
+// phisical keyboard
+document.addEventListener('keydown', function(event) {
+    let letter = event.key.toLowerCase();
+    if (alphabet.includes(letter)) {
+        warningMessage.style.display = 'none';
+        let key = document.querySelector(`button[data-letter='${letter}']`);
+        if (key) {
+            key.click();
+        }
+    } else if (event.code.startsWith('Key')) { 
+      warningMessage.style.display = 'block';
+  }
+});
+
+document.addEventListener('click', function(event) {
+  if (!warningMessage.contains(event.target) && warningMessage.style.display === 'block') {
+      warningMessage.style.display = 'none';
+  }
+});
+
 
 //new game
 modalButton.addEventListener('click', () => {
