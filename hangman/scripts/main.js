@@ -139,12 +139,11 @@ modalButton.textContent = 'Play again';
 modalContent.appendChild(modalButton);
 
 
+
 let currentWord;
 let wrongAttemp = 0;
 const maxAttemps = 6;
 let correctLetters = [];
-
-
 
 const getRandomWord = () => {
   const {word, hint} = wordList[Math.floor(Math.random() * wordList.length)];
@@ -163,6 +162,7 @@ const gameOver = (win) => {
     // modalAnswer.innerHTML = `${currentWord}`;
     modal.classList.add ('show');
   }, 300);
+  modalButton.blur();
 }
 
 // div game
@@ -187,9 +187,11 @@ alphabet.forEach(letter => {
           };
       });
       } else{
-        wrongAttemp++;
-        hangmanImage.src = `img/hangman-${wrongAttemp}.svg`;
+        if(wrongAttemp < maxAttemps){
+          wrongAttemp++;
+          hangmanImage.src = `img/hangman-${wrongAttemp}.svg`;
         }
+      }
 
         key.disabled = true;
         incorrectGuessesScore.innerText = `${wrongAttemp} / ${maxAttemps}`;
